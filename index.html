@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#4f46e5",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-primary">MyApp</h1>
+        <button id="menu-btn" class="md:hidden text-2xl">&#9776;</button>
+        <nav id="menu" class="space-x-6 hidden md:flex">
+          <a href="#" class="hover:text-primary">Home</a>
+          <a href="#features" class="hover:text-primary">Features</a>
+          <a href="#testimonials" class="hover:text-primary">Testimonials</a>
+          <a href="#contact" class="hover:text-primary">Contact</a>
+        </nav>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2">
+        <a href="#" class="block hover:text-primary">Home</a>
+        <a href="#features" class="block hover:text-primary">Features</a>
+        <a href="#testimonials" class="block hover:text-primary">Testimonials</a>
+        <a href="#contact" class="block hover:text-primary">Contact</a>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between">
+        <div class="w-full md:w-1/2 space-y-6">
+          <h2 class="text-4xl font-bold">Supercharge your workflow</h2>
+          <p class="text-lg text-gray-600">A modern app that helps you work smarter, faster, and better. Start for free!</p>
+          <a href="#" class="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-indigo-700">Get Started</a>
+        </div>
+        <div class="w-full md:w-1/2 mb-10 md:mb-0">
+          <img src="assets/img/banner.jpg" class="rounded-lg shadow-lg" />
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section id="features" class="py-20 bg-white text-center">
+      <h3 class="text-3xl font-bold mb-10">Awesome Features</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+        <div class="p-6 bg-gray-50 rounded-lg shadow">
+          <h4 class="text-xl font-semibold mb-2">Fast</h4>
+          <p>Optimized performance for speed and reliability.</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-lg shadow">
+          <h4 class="text-xl font-semibold mb-2">Secure</h4>
+          <p>Top-notch security to protect your data.</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-lg shadow">
+          <h4 class="text-xl font-semibold mb-2">User Friendly</h4>
+          <p>Clean interface with seamless user experience.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials" class="bg-gray-100 py-20">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold mb-10">What Our Users Say</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded shadow">
+            <p>"MyApp boosted our productivity by 40%! Highly recommended."</p>
+            <p class="mt-4 font-semibold">— Sarah K.</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <p>"Clean interface and fast performance. Love using it daily."</p>
+            <p class="mt-4 font-semibold">— Ahmed R.</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <p>"Customer support is amazing. Great value for money."</p>
+            <p class="mt-4 font-semibold">— Lisa M.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Form -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold mb-8">Contact Us</h3>
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" placeholder="Your Name" class="p-3 border border-gray-300 rounded" required />
+          <input type="email" placeholder="Your Email" class="p-3 border border-gray-300 rounded" required />
+          <textarea placeholder="Your Message" class="p-3 border border-gray-300 rounded md:col-span-2" rows="5"></textarea>
+          <button type="submit" class="bg-primary text-white px-6 py-3 rounded md:col-span-2 hover:bg-indigo-700">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="bg-primary text-white py-16 text-center">
+      <h3 class="text-3xl font-bold mb-4">Start your journey with MyApp</h3>
+      <p class="mb-6">No credit card required. Get started for free!</p>
+      <a href="#" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">Sign Up Free</a>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8 text-center">
+      <p>&copy; 2025 MyApp. All rights reserved.</p>
+      <p>Developed by হেদায়েত আলী</p>
+    </footer>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
